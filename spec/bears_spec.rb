@@ -31,4 +31,9 @@ end
  def test_river_has_some_fish
     assert_equal( 3, @river.river_has_some_fish)
   end
+
+  def test_bear_eats_a_fish
+    eating_bear = @bear1
+    assert_equal( "YES", bear_eats_fish(eating_bear))
+  end
 end
