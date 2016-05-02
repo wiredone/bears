@@ -9,7 +9,7 @@ class Bear
  end
 
  def roar
-  return " #{@name} roars"
+  return " #{@name} roars \"there is no fish.  Fish is dead\""
  end
 
 end
@@ -23,10 +23,17 @@ class Fish
  @name = name
  
  end
+end
+
 
 class River
+ attr_accessor :river_fish
 
-   def initialize( bank_accounts )
-    @accounts = bank_accounts
+  def initialize( fishes )
+   @river_fish = fishes
+  end
+
+  def river_has_some_fish()
+    return @river_fish.size
   end
 end
